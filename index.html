@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#license").mask("SSS-0000")
+    })
+    </script>
+    <title>EasyParking</title>
+</head>
+<body>
+<div>
+    <header>
+        <img src="assets/images/logo.svg" alt="easyparking"/>
+    </header>
+    <div>
+        <input type="text" id="name" placeholder="Digite marca / modelo do veículo" autocomplete="off">
+        <input type="text" id="color" placeholder="Descreva a cor do veículo" autocomplete="off">
+        <input type="text" id="license" placeholder="Informe a placa do veículo" autocomplete="off">
+        <button id="submit">Registrar</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Veículo</th>
+                <th>Cor</th>
+                <th>Placa</th>
+                <th>Horário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="garage"></tbody>
+    </table>
+</div>
+<script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+</html>
